@@ -19,7 +19,7 @@ func main() {
 
 	fmt.Printf("\n")
 
-	for i, v := range s{
+	for i, v := range s {
 		fmt.Println(i, v)
 	}
 }
