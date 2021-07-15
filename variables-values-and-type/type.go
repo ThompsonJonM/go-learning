@@ -6,7 +6,7 @@ var y = 42
 var z string = "This is a string"
 var a string = `this is a "raw" string`
 
-type newString string
+type newString string // type alias; do not do unless attaching methods to it
 
 var b newString = "Hello World"
 
