@@ -8,7 +8,7 @@ func main() {
 	fmt.Println("The total is", x)
 }
 
-func foo(x ...int) int { 
+func foo(x ...int) int {
 	fmt.Println(x)
 	fmt.Printf("%T\n", x)
 
