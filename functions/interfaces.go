@@ -17,7 +17,7 @@ func (s secretAgent) speak() {
 }
 
 func (p person) speak() {
-	fmt.Println("I am", p.first, p.last,"- the person speak")
+	fmt.Println("I am", p.first, p.last, "- the person speak")
 }
 
 // Interfaces allow us to define behavior and do polymorphism
@@ -26,7 +26,7 @@ type human interface {
 }
 
 func bar(h human) {
-	switch h.(type) { // Switch on data TYPE
+	switch h.(type) { // Switch on data TYPE; can ONLY be used in switch
 	case person:
 		fmt.Println("I am a person,", h.(person).first, h.(person).last) // Example of TYPE assertion
 	case secretAgent:
