@@ -62,6 +62,10 @@ func main() {
 
 	users := []user{u1, u2, u3}
 
+	for _, user := range users {
+		sort.Strings(user.Sayings)
+	}
+
 	fmt.Println(users)
 
 	// your code goes here
