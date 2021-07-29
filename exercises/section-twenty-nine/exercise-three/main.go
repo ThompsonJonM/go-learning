@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/ThompsonJonM/go-learning/exercises/section-twenty-nine/exercise-three/mymath"
+)
 
 func main() {
 	xxi := gen()
