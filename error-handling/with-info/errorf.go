@@ -12,6 +12,7 @@ func main() {
 	}
 }
 
+// Use Errorf when an error needs to be returned
 func sqrt(f float64) (float64, error) {
 	if f < 0 {
 		return 0, fmt.Errorf("norgate math: square root of negative number: %v", f)

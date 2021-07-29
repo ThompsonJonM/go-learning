@@ -13,9 +13,8 @@ type canine struct {
 func main() {
 	d := canine{
 		name: "Winston",
-		age:  0.9,
+		age:  dog.Years(0.9),
 	}
 
-	y := dog.Years(d.age)
-	fmt.Println(y)
+	fmt.Println(d)
 }

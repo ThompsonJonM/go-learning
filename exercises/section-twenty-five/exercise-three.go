@@ -22,4 +22,6 @@ func main() {
 
 func foo(e error) {
 	fmt.Println(e)
+	// fmt.Println(e.info) // This will fail
+	fmt.Println(e.(customErr).info) // Assertion prints "This should run"
 }

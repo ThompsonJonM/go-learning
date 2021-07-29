@@ -5,7 +5,7 @@ package mymath
 func Sum(x ...int) int {
 	s := 0
 	for _, k := range x {
-		s = s + k
+		s += k
 	}
 
 	return s
@@ -15,7 +15,7 @@ func Sum(x ...int) int {
 func Difference(x ...int) int {
 	s := 0
 	for _, k := range x {
-		s = s - k
+		s -= k
 	}
 
 	return s
@@ -23,20 +23,17 @@ func Difference(x ...int) int {
 
 // Product returns the multiplied total of each parameter of TYPE int
 func Product(x ...int) int {
-	s := 0
-	for _, k := range x {
-		s = s * k
+	f := 1
+	for _, v := range x {
+		f *= v
 	}
 
-	return s
+	return f
 }
 
 // Quotient returns the divided total of each parameter of TYPE int
-func Quotient(x ...int) int {
-	s := 0
-	for _, k := range x {
-		s = s / k
-	}
+func Quotient(x, y int) int {
+	s := x / y
 
 	return s
 }

@@ -1,6 +1,15 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
+
+func Examplefoo() {
+	fmt.Println(foo(2, 3))
+	// Output:
+	// 5
+}
 
 func TestFoo(t *testing.T) {
 	got := foo(2, 7)

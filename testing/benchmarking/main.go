@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/ThompsonJonM/go-learning/testing/benchmarking/mystring"
 	"strings"
 )
 
@@ -13,4 +14,7 @@ func main() {
 	for _, v := range xs {
 		fmt.Println(v)
 	}
+
+	fmt.Println(mystring.Cat(xs))
+	fmt.Println(mystring.Join(xs))
 }
